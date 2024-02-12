@@ -13,6 +13,7 @@ use Exception;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Navigation\NavigationItem;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
@@ -57,6 +58,13 @@ class AdminPanelProvider extends PanelProvider
                 VersionsPlugin::make(),
             ])
             ->brandLogo(fn() => view('components.logo'))
+            ->navigationItems([
+                NavigationItem::make('Laravel Telescope')
+                    ->url('/telescope', shouldOpenInNewTab: true)
+                    ->icon('heroicon-o-bug-ant')
+                    ->group('Systems')
+                    ->hidden(fn(): bool => ! app()->isLocal()),
+            ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
@@ -83,6 +91,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->resources([
                 config('filament-logger.activity_resource')
-            ]);
+            ])
+            ->sidebarFullyCollapsibleOnDesktop();
     }
 }
