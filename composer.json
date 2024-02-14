@@ -29,6 +29,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "shuvroroy/filament-spatie-laravel-health": "^2.0",
+        "ysfkaya/filament-phone-input": "^2.3",
         "z3d0x/filament-logger": "^0.6.3"
     },
     "require-dev": {
