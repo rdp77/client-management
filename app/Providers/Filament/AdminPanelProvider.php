@@ -58,6 +58,11 @@ class AdminPanelProvider extends PanelProvider
                 VersionsPlugin::make(),
             ])
             ->brandLogo(fn() => view('components.logo'))
+            ->navigationGroups([
+                'Collections',
+                'Settings',
+                'Systems',
+            ])
             ->navigationItems([
                 NavigationItem::make('Laravel Telescope')
                     ->url('/telescope', shouldOpenInNewTab: true)
