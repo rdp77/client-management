@@ -5,9 +5,18 @@
     "keywords": [
         "laravel",
         "livewire",
-        "filament"
+        "filament",
+        "client-management"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Moh Ravi Dwi Putra",
+            "email": "hi@ravidwiputra.web.id",
+            "homepage": "https://ravidwiputra.web.id",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^8.1",
         "awcodes/filament-versions": "^2.0",
