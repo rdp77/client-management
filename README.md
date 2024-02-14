@@ -72,6 +72,7 @@ The following [Filament plugins](https://filamentphp.com/plugins) come fully imp
 | [Jobs Monitor](https://github.com/croustibat/filament-jobs-monitor) | Easily monitor background jobs and their progress.                         | [croustibat](https://github.com/croustibat)     |
 | [Breezy](https://github.com/jeffgreco13/filament-breezy)            | Customizable user profile pages and 2FA support.                           | [jeffgreco13](https://github.com/jeffgreco13)   |
 | [Logger](https://github.com/z3d0x/filament-logger)                  | Zero-config resource activity logging.                                     | [z3d0x](https://github.com/z3d0x)               |
+| [Phone Input](https://github.com/ysfkaya/filament-phone-input)          | This package provides a phone input component for Laravel Filament. It uses International Telephone Input to provide a dropdown of countries and flags.                                     | [ysfkaya](https://github.com/ysfkaya/)               |
 
 ## Bug Reports
 
