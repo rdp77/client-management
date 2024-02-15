@@ -2,7 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use App\Models\Client;
+use App\Models\Marketer;
+use App\Models\Product;
 use App\Models\User;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Seeder;
@@ -23,6 +26,9 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Client::factory()->count(25)->create();
+        Marketer::factory()->count(25)->create();
+        Product::factory()->count(50)->create();
+        Category::factory()->count(10)->create();
 
         Notification::make()
             ->title('Welcome to Filament')
