@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Category;
-use App\Models\Post;
+use App\Models\Client;
+use App\Models\Marketer;
+use App\Models\Product;
 use App\Models\User;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Seeder;
@@ -23,6 +24,11 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@admin.test',
             'password' => Hash::make('admin'),
         ]);
+
+        Client::factory()->count(25)->create();
+        Marketer::factory()->count(25)->create();
+        Product::factory()->count(50)->create();
+        Category::factory()->count(10)->create();
 
         Notification::make()
             ->title('Welcome to Filament')
