@@ -19,6 +19,7 @@
     ],
     "require": {
         "php": "^8.1",
+        "ariaieboy/filament-currency": "^1.2",
         "awcodes/filament-versions": "^2.0",
         "bezhansalleh/filament-exceptions": "^2.1",
         "croustibat/filament-jobs-monitor": "^2.1",
